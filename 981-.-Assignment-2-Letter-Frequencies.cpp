@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int main()
+int main(int argc, char const *argv[])
 {
 	string s;
 	int A[26]={0};
@@ -13,7 +13,6 @@ int main()
 		A[s[i]-'A']++;
 		B[s[i]-'A']++;
 	}
-	
 	sort(A,A + 26);
 
 	for (int i = 25; A[i]>0; i--)
